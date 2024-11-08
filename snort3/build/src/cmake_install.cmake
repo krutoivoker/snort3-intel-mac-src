@@ -1,0 +1,98 @@
+# Install script for directory: /Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/src
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/Users/alexiaputellas/.src/snort/storage")
+endif()
+string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+
+# Set the install configuration name.
+if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  if(BUILD_TYPE)
+    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+  else()
+    set(CMAKE_INSTALL_CONFIG_NAME "RelWithDebInfo")
+  endif()
+  message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+endif()
+
+# Set the component getting installed.
+if(NOT CMAKE_INSTALL_COMPONENT)
+  if(COMPONENT)
+    message(STATUS "Install component: \"${COMPONENT}\"")
+    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  else()
+    set(CMAKE_INSTALL_COMPONENT)
+  endif()
+endif()
+
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+# Set path to fallback-tool for dependency-resolution.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/snort")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/snort" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/snort")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/snort")
+    endif()
+  endif()
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/actions/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/codecs/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/control/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/detection/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/dump_config/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/events/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/file_api/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/filters/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/flow/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/framework/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/hash/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/js_norm/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/latency/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/log/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/main/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/managers/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/memory/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/mime/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/packet_io/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/parser/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/payload_injector/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/ports/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/protocols/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/sfip/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/sfrt/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/service_inspectors/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/stream/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/target_based/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/host_tracker/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/pub_sub/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/time/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/profiler/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/trace/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/utils/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/helpers/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/lua/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/decompress/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/ips_options/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/loggers/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/network_inspectors/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/policy_selectors/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/search_engines/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/side_channel/cmake_install.cmake")
+  include("/Users/alexiaputellas/.src/snort/src/snort3-snort3-3d4b82a/build/src/connectors/cmake_install.cmake")
+
+endif()
+

@@ -1,0 +1,2 @@
+# This is the command used to configure this build
+./configure_cmake.sh --disable-docs --with-flex-prefix=/Users/alexiaputellas/.src/snort/storage --with-openssl=/Users/alexiaputellas/.src/snort/storage --with-daq-libraries=/Users/alexiaputellas/.src/snort/storage/lib/daq --with-dnet-libraries=/Users/alexiaputellas/.src/snort/storage --with-pcre-libraries=/Users/alexiaputellas/.src/snort/storage --with-luajit-libraries=/Users/alexiaputellas/.src/snort/storage --with-pcap-libraries=/Users/alexiaputellas/.src/snort/storage --prefix=/Users/alexiaputellas/.src/snort/storage
