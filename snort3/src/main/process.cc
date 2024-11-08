@@ -675,40 +675,14 @@ void StoreSnortInfoStrings()
 
 int DisplayBanner()
 {
-    const char* ljv = LUAJIT_VERSION;
-    while ( *ljv && !isdigit(*ljv) )
-        ++ljv;
-
     LogMessage("\n");
-    LogMessage("   ,,_     -*> Snort++ <*-\n");
-#ifdef BUILD
-    LogMessage("  o\"  )~   Version %s (Build %s)\n", VERSION, BUILD);
-#else
-    LogMessage("  o\"  )~   Version %s\n", VERSION);
-#endif
+    LogMessage("   ,,_     -*> Snort %s <*-\n", VERSION);
     LogMessage("   ''''    By Martin Roesch & The Snort Team\n");
     LogMessage("           http://snort.org/contact#team\n");
     LogMessage("           Copyright (C) 2014-2024 Cisco and/or its affiliates."
                            " All rights reserved.\n");
-    LogMessage("           Copyright (C) 1998-2013 Sourcefire, Inc., et al.\n");
-    LogMessage("           Using DAQ version %s\n", daq_version_string());
-#ifdef HAVE_HYPERSCAN
-    LogMessage("           Using Hyperscan version %s\n", hs_version());
-#endif
-#ifdef HAVE_JEMALLOC
-    const char* jv;
-    size_t sz = sizeof(jv);
-    mallctl("version", &jv,  &sz, NULL, 0);
-    LogMessage("           Using Jemalloc version %s\n", jv);
-#endif
-    LogMessage("           Using %s\n", pcap_lib_version());
-    LogMessage("           Using LuaJIT version %s\n", ljv);
-#ifdef HAVE_LZMA
-    LogMessage("           Using LZMA version %s\n", lzma_version_string());
-#endif
-    LogMessage("           Using %s\n", OpenSSL_version(SSLEAY_VERSION));
-    LogMessage("           Using PCRE version %s\n", pcre_version());
-    LogMessage("           Using ZLIB version %s\n", zlib_version);
+    LogMessage("           Copyright (C) 1998-2013 Sourcefire, Inc.\n");
+    LogMessage("Libraries: daq:3.0.17,libpcap:1.10.5,luajit:2.1.1,lzma:5.6.3,openssl:3.0.9,pcre:8.45,zlib:1.3.1\n");
 
     LogMessage("\n");
 
